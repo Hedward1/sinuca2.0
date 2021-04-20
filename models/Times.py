@@ -4,7 +4,7 @@ from termcolor import colored
 
 class Times:
     times = []
-    time_id = 9
+    time_id = 1
 
     def __init__(self):
         pass
@@ -41,7 +41,7 @@ class Times:
 
     # Seleciona o "time" com o numero procurado e então adiciona o score
     def incrementar_score(self, time, score):
-        self.times[str(time-1)]['score'] += score
+        self.times[time-1]['score'] += score
         if self.times[time-1]['score'] >= Campeonato.score:
             print(colored(f' O TIME {self.times[time-1]["nome"]} É O VENCEDOR', 'green'))
 

@@ -24,8 +24,8 @@ while verification:
 
         campeonato.criar_campeonato(nome=nome_torneio,
                                     descricao=descricao_torneio,
-                                    regras=regras_torneio)
-        campeonato.score_vencedor(score_torneio)
+                                    regras=regras_torneio,
+                                    score=score_torneio)
 
     elif value == '2':
         campeonato.mostrar_torneio()
@@ -42,7 +42,7 @@ while verification:
                            jogador2=nome_jogador2)
 
     elif value == '5':
-        time_insert = str(input('Sigite o "id" do time que seja alterar,'
+        time_insert = int(input('Sigite o "id" do time que seja alterar,'
                                 'pode descobrir selecionando numero 3 na tela '
                                 'anterior.'))
         score_insert = int(input('digite o score que dejesa adicionar'))
