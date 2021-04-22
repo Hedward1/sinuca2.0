@@ -42,12 +42,15 @@ while verification:
                                jogador2=nome_jogador2)
 
         else:
-            print('Primeiro crie um campeonato para depois adicionar um time. ')
+            print('*-----------------------------------------------------------*')
+            print('*Primeiro crie um campeonato para depois adicionar um time. *')
+            print('*-----------------------------------------------------------*\n \n')
 
     elif value == '5':
-        time_insert = int(input('Sigite o "id" do time que seja alterar,'
+        print('')
+        time_insert = int(input('Sigite o "id" do time que seja alterar, '
                                 'pode descobrir selecionando numero 3 na tela '
-                                'anterior.'))
+                                'anterior. \n'))
         score_insert = int(input('digite o score que dejesa adicionar'))
         time.incrementar_score(time_insert, score_insert)
     elif value == '0':
