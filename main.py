@@ -32,14 +32,17 @@ while verification:
     elif value == '3':
         time.mostrar_salao()
     elif value == '4':
-        print('cadastro Time')
-        time_nome = input('Digite o nome do time: \n')
-        nome_jogador1 = input('Digite o nome do primeiro jogador \n')
-        nome_jogador2 = input('Digite o nome do segundo jogador \n')
+        if not campeonato != []:
+            time_nome = input('Digite o nome do time: \n')
+            nome_jogador1 = input('Digite o nome do primeiro jogador \n')
+            nome_jogador2 = input('Digite o nome do segundo jogador \n')
 
-        time.cadastro_time(nome_time=time_nome,
-                           jogador1=nome_jogador1,
-                           jogador2=nome_jogador2)
+            time.cadastro_time(nome_time=time_nome,
+                               jogador1=nome_jogador1,
+                               jogador2=nome_jogador2)
+
+        else:
+            print('Primeiro crie um campeonato para depois adicionar um time. ')
 
     elif value == '5':
         time_insert = int(input('Sigite o "id" do time que seja alterar,'
