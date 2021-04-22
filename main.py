@@ -54,8 +54,9 @@ while verification:
                                 'anterior. \n'))
         score_insert = int(input('digite o score que dejesa adicionar'))
         time.incrementar_score(time_insert, score_insert)
+
     elif value == '0':
-        verification = 0
+        verification = 0  # seta como False, saindo do laço while e encerrando o programa
 
     else:
         print(colored('*--------------------------*', 'red'))

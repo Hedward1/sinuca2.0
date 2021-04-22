@@ -24,6 +24,9 @@ class Times:
                                 'jogador1': self.__jogador1,
                                 'jogador2': self.__jogador2,
                                 'score': self.score})
+            print(colored('*-------------------------*', 'green'))
+            print(colored('* Time adicionado a lista *', 'green'))
+            print(colored('*-------------------------* \n', 'green'))
 
         # se caso insira mais de x times
         elif self.time_id > 10:
