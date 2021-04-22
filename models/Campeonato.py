@@ -1,3 +1,5 @@
+from termcolor import colored
+
 
 class Campeonato:
     campeonato = []
@@ -15,6 +17,9 @@ class Campeonato:
                                       self.descricao,
                                       self.regras,
                                       self.score])
+        print(colored('*-------------------*', 'green'))
+        print(colored('* Campeonato criado *', 'green'))
+        print(colored('*-------------------* \n', 'green'))
 
     def mostrar_torneio(self):
         return print(f'Nome do Torneio : {self.campeonato[0]} \n'
