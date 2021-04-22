@@ -1,5 +1,6 @@
 from models.Campeonato import Campeonato
 from models.Times import Times
+from termcolor import colored
 
 verification = True
 campeonato = Campeonato()
@@ -42,9 +43,9 @@ while verification:
                                jogador2=nome_jogador2)
 
         else:
-            print('*-----------------------------------------------------------*')
-            print('*Primeiro crie um campeonato para depois adicionar um time. *')
-            print('*-----------------------------------------------------------*\n \n')
+            print(colored('*------------------------------------------------------------*', 'red'))
+            print(colored('* Primeiro crie um campeonato para depois adicionar um time. *', 'red'))
+            print(colored('*------------------------------------------------------------*\n \n', 'red'))
 
     elif value == '5':
         print('')
@@ -57,4 +58,6 @@ while verification:
         verification = 0
 
     else:
-        print('Valor digitado incoreto.')
+        print(colored('*--------------------------*', 'red'))
+        print(colored('* Valor digitado incoreto. *', 'red'))
+        print(colored('*--------------------------* \n', 'red'))
